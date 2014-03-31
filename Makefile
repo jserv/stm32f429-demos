@@ -25,7 +25,7 @@ $(FLASH_TARGETS): $(BIN_LIST)
 		-c "reset run" -c shutdown 	
 
 list: $(HEX_LIST)
-	@echo "Firmware:" $(addsuffix ";",$(TARGET_LIST))
+	@echo "Firmware:" $(addprefix "\n\t",$(TARGET_LIST))
 
 clean:
 	rm -f $(BIN_LIST)
