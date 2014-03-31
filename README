@@ -13,3 +13,6 @@ Sources of the demo firmware:
 
 * STM32F429I-DISCOVERY_Demo_V1.0.1.hex
   http://www.st.com/web/en/catalog/tools/PF259429
+
+* STM32CubeDemo_STM32F429I-Discovery.hex
+  http://www.st.com/web/en/catalog/tools/PF259243
