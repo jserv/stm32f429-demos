@@ -1,0 +1,15 @@
+Collection of demo program for STM32F429 Discovery
+
+Usage:
+* Get firmware list:
+  make list
+* Flash the device using given firmware
+  make flash-Paint
+
+
+Sources of the demo firmware:
+* Paint.hex
+  http://bouchkati-tarek.blogspot.tw/2014/01/stm32f429i-disco-as-paint.html
+
+* STM32F429I-DISCOVERY_Demo_V1.0.1.hex
+  http://www.st.com/web/en/catalog/tools/PF259429
