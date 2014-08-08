@@ -13,7 +13,6 @@ all: $(BIN_LIST)
 FLASH_TARGETS = $(addprefix flash-,$(TARGET_LIST))
 
 $(FLASH_TARGETS): $(BIN_LIST)
-	st-flash write $(@:flash-%=%).bin 0x8000000 || \
 	openocd \
 		-f interface/stlink-v2.cfg \
 		-f target/stm32f4x_stlink.cfg \
@@ -22,7 +21,8 @@ $(FLASH_TARGETS): $(BIN_LIST)
 		-c "flash probe 0" \
 		-c "flash info 0" \
 		-c "flash write_image erase $(@:flash-%=%).bin 0x8000000" \
-		-c "reset run" -c shutdown 	
+		-c "reset run" -c shutdown || \
+	st-flash write $(@:flash-%=%).bin 0x8000000
 
 list: $(HEX_LIST)
 	@echo -e "Firmware:" $(addprefix "\n\t",$(TARGET_LIST))
