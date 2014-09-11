@@ -16,3 +16,6 @@ Sources of the demo firmware:
 
 * STM32CubeDemo_STM32F429I-Discovery.hex
   http://www.st.com/web/en/catalog/tools/PF259243
+
+* TouchGFX 
+  http://ftp.mjolner.dk/TouchGFX/demos/touchgfx_demo2014_small.zip
