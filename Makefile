@@ -20,6 +20,7 @@ $(FLASH_TARGETS): $(BIN_LIST)
 		-f target/stm32f4x_stlink.cfg \
 		-c "init" \
 		-c "reset init" \
+		-c "stm32f2x unlock 0" \
 		-c "flash probe 0" \
 		-c "flash info 0" \
 		-c "flash write_image erase $(@:flash-%=%).bin 0x8000000" \
