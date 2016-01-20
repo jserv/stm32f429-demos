@@ -2,7 +2,8 @@ HEX_LIST = \
 	collections/Paint.hex \
 	collections/STM32F429I-DISCOVERY_Demo_V1.0.1.hex \
 	collections/STM32CubeDemo_STM32F429I-Discovery.hex \
-	collections/TouchGFX-demo2014.hex
+	collections/TouchGFX-demo2014.hex \
+	collections/GamesInJava.hex
 
 BIN_LIST = $(HEX_LIST:collections/%.hex=%.bin)
 TARGET_LIST = $(HEX_LIST:collections/%.hex=%)
